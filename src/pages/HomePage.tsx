@@ -6,8 +6,8 @@ import {Icon} from "@iconify-icon/solid";
 
 const HomePage: Component = () => {
     return (
-        <div class="py-[96px] flex gap-[48px]">
-            <div class="flex flex-col justify-between">
+        <div class="py-[96px] flex flex-col lg:flex-row gap-[48px]">
+            <div class="flex flex-col gap-5 justify-between">
                 <div class="space-y-[8px]">
                     <h1 class="text-[#F9FAFB] font-bold text-[60px]">Hi, saya Wahyu 👋</h1>
                     <p class="text-[#D1D5DB] text-[16px]">Saya merupakan website developer yang lebih fokus dalam
@@ -31,7 +31,7 @@ const HomePage: Component = () => {
                 </div>
                 <SocialMediaLinks/>
             </div>
-            <div class="w-[400px] h-[360px]">
+            <div class="w-full lg:w-[400px] h-[360px]">
                 <Image src={'/images/FOTO.JPG'} alt={'FOTO'}/>
             </div>
         </div>

@@ -26,21 +26,21 @@ const PortfolioPage: Component = () => {
         }
     ]
     return (
-        <div class="space-y-[48px] w-full">
+        <div class="space-y-[48px] w-full mt-20">
             <div class="space-y-[16px]">
                 <div class="flex justify-center">
                     <Badge>Experience</Badge>
                 </div>
                 <p class="text-center">Here is a quick summary of my most recent experiences:</p>
             </div>
-            <div class="flex items-center px-[192px]">
+            <div class="flex items-center lg:px-[192px]">
                 <div class="space-y-[48px] overflow-auto h-[70vh] w-full">
                     {
                         experiences.map((item, index) => (
                             <div
-                                class="grid grid-cols-4 bg-[#1F2937] rounded-[12px] p-[32px] gap-[48px] text-[#D1D5DB]">
+                                class="grid lg:grid-cols-4 bg-[#1F2937] rounded-[12px] p-[32px] gap-5 lg:gap-[48px] text-[#D1D5DB]">
                                 <div class="col-span-1">
-                                    <h1 class="font-semibold">{item.company}</h1>
+                                    <h1 class="font-semibold whitespace-nowrap lg:whitespace-normal">{item.company}</h1>
                                 </div>
                                 <div class="col-span-2 space-y-[16px]">
                                     <h1 class="text-[#F9FAFB] text-[20px] font-semibold">{item.position}</h1>
@@ -52,8 +52,8 @@ const PortfolioPage: Component = () => {
                                         }
                                     </ul>
                                 </div>
-                                <div class="col-span-1">
-                                    <p class="text-end">{item.date}</p>
+                                <div class="order-2 lg:order-last col-span-1">
+                                    <p class="lg:text-end">{item.date}</p>
                                 </div>
                             </div>
                         ))

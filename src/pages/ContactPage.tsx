@@ -5,7 +5,7 @@ import SocialMediaLinks from "../components/SocialMediaLinks";
 
 const ContactPage: Component = () => {
     return (
-        <div class="space-y-[48px] w-full">
+        <div class="space-y-[48px] mt-20 w-full">
             <div class="space-y-[16px]">
                 <div class="flex justify-center">
                     <Badge>Get In Touch</Badge>
