@@ -3,7 +3,7 @@ import Image from "../components/Image";
 
 const AboutPage: Component = () => {
     return (
-        <div class="grid  lg:grid-cols-2 gap-[48px] items-center mt-20">
+        <div class="grid  lg:grid-cols-2 gap-[48px] items-center py-20">
             <div class="order-last lg:order-1 h-full lg:w-[440px]">
                 <Image src={'/images/FOTO.JPG'} alt={'FOTO'}/>
             </div>

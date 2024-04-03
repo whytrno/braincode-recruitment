@@ -26,7 +26,7 @@ const PortfolioPage: Component = () => {
         }
     ]
     return (
-        <div class="space-y-[48px] w-full mt-20">
+        <div class="space-y-[48px] w-full py-20">
             <div class="space-y-[16px]">
                 <div class="flex justify-center">
                     <Badge>Experience</Badge>
@@ -34,7 +34,7 @@ const PortfolioPage: Component = () => {
                 <p class="text-center">Here is a quick summary of my most recent experiences:</p>
             </div>
             <div class="flex items-center lg:px-[192px]">
-                <div class="space-y-[48px] overflow-auto h-[70vh] w-full">
+                <div class="space-y-[48px] lg:overflow-auto lg:h-[70vh] w-full">
                     {
                         experiences.map((item, index) => (
                             <div
